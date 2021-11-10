@@ -254,14 +254,11 @@ addEventListener('click', (event) => {
         event.clientX - canvas.width / 2
     )
     const velocity = {
-        x: Math.cos(angle) * 5,
-        y: Math.sin(angle) * 5
+        x: Math.cos(angle) * 4,
+        y: Math.sin(angle) * 4
 
     }
-   projectiles.push(
-       new Projectile(
-       canvas.width /2, canvas.height /2, 5,'white',velocity)
-   )
+   projectiles.push(new Projectile(canvas.width /2, canvas.height /2, 5,'white',velocity))
 })
 
 startGameBtn.addEventListener('click', () =>{
